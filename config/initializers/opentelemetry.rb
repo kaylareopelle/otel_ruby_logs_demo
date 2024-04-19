@@ -5,7 +5,9 @@ require 'opentelemetry/exporter/otlp'
 require 'opentelemetry/exporter/otlp_logs'
 require 'opentelemetry/instrumentation/all'
 
-# this exports logs via OTLP and prints OTel logs to the console
+# The current value for ENV['OTEL_LOGS_EXPORTER'] exports logs via OTLP
+# and prints OTel logs to the console. Valid options include:
+# 'otlp', 'console', 'otlp,console'
 ENV['OTEL_LOGS_EXPORTER'] = 'otlp,console'
 ENV['OTEL_SERVICE_NAME'] = 'Logs Demo - OTel Ruby Agent'
 
