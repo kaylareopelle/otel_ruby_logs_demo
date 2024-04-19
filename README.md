@@ -30,9 +30,38 @@ If you'd like to see just the `Gemfile` and an example `opentelemetry.rb` initia
 
 If you'd like to see how logs would look with your observability vendor, update the `config/initializers/opentelemetry.rb` file to send the data to your vendor of choice.
 
+### Example OpenTelemetry log:
+```
+#<struct OpenTelemetry::SDK::Logs::LogRecordData
+ timestamp=2024-04-19 15:06:50.118496 -0700,
+ observed_timestamp=2024-04-19 15:06:50.118496 -0700,
+ trace_id="\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00",
+ span_id="\x00\x00\x00\x00\x00\x00\x00\x00",
+ trace_flags=#<OpenTelemetry::Trace::TraceFlags:0x0000000106a73580 @flags=0>,
+ severity_text="INFO",
+ severity_number=9,
+ body="Instrumentation: OpenTelemetry::Instrumentation::Logger was successfully installed with the following options {}",
+ resource=
+  #<OpenTelemetry::SDK::Resources::Resource:0x0000000107b9c3c0
+   @attributes=
+    {"service.name"=>"Logs Demo - OTel Ruby Agent",
+     "process.pid"=>91454,
+     "process.command"=>"bin/rails",
+     "process.runtime.name"=>"ruby",
+     "process.runtime.version"=>"3.2.2",
+     "process.runtime.description"=>"ruby 3.2.2 (2023-03-30 revision e51014f9c0) [x86_64-darwin22]",
+     "telemetry.sdk.name"=>"opentelemetry",
+     "telemetry.sdk.language"=>"ruby",
+     "telemetry.sdk.version"=>"1.4.1"}>,
+ instrumentation_scope=#<struct OpenTelemetry::SDK::InstrumentationScope name="opentelemetry-instrumentation-logger", version="0.0.0">,
+ attributes=nil,
+ total_recorded_attributes=0>
+```
+
 ### Contributions
 
-If you have any problems with this example, please feel free to open a PR or an issue in this repository. PRs and comments are also welcome on the experimental PRs mentioned above.
+If you have any problems with this example, please feel free to open a PR or an issue in this repository.
+PRs and comments are also welcome on the experimental PRs mentioned above.
 
 Reviews are also welcome on the [PRs related to logs in the opentelemetry-ruby repository.](https://github.com/open-telemetry/opentelemetry-ruby/pulls?q=is%3Aopen+is%3Apr+logs) [Project status is available here.](https://github.com/open-telemetry/opentelemetry-ruby/projects/3)
 
