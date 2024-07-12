@@ -21,8 +21,8 @@ jobs:
     steps:
       - name: Configure git
         run: 'git config --global init.defaultBranch main'
-      - uses: actions/checkout
-      - uses: ruby/setup-ruby
+      - uses: actions/checkout@4.1.7
+      - uses: ruby/setup-ruby@1.187.0
         with:
           ruby-version: '3.3'
       - run: bundle
