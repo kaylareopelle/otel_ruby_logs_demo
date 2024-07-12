@@ -22,6 +22,12 @@ group :development, :test do
   gem "debug", platforms: %i[ mri mingw x64_mingw ]
 end
 
+group :test do
+  gem 'minitest'
+  gem 'opentelemetry-test-helpers'
+  gem 'rack-test'
+end
+
 # OpenTelemetry gems with logging-related enhancements
 gem 'opentelemetry-api',
   git: 'https://github.com/kaylareopelle/opentelemetry-ruby',
