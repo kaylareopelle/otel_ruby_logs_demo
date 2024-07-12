@@ -398,7 +398,7 @@ GEM
     opentelemetry-test-helpers (0.4.0)
     psych (5.1.2)
       stringio
-    puma (5.6.8)
+    puma (6.4.2)
       nio4r (~> 2.0)
     racc (1.8.0)
     rack (2.2.9)
@@ -473,7 +473,7 @@ DEPENDENCIES
   opentelemetry-logs-sdk!
   opentelemetry-sdk!
   opentelemetry-test-helpers
-  puma (~> 5.0)
+  puma (~> 6.4)
   rack-test
   rails (~> 7.0.8)
   sqlite3 (~> 1.4)
