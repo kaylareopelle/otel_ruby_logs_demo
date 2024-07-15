@@ -112,7 +112,7 @@ GIT
 
 GIT
   remote: https://github.com/kaylareopelle/opentelemetry-ruby-contrib
-  revision: b0da0f1fabf28cf68e528602b5c462157523de7c
+  revision: 18a45d1c3122a95ec1836821ff765a39afc8ff01
   branch: logger-instrumentation
   glob: instrumentation/logger/*.gemspec
   specs:
