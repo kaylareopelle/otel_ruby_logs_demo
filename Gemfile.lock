@@ -58,11 +58,11 @@ GIT
 
 GIT
   remote: https://github.com/kaylareopelle/opentelemetry-ruby
-  revision: bd16be26ffa86cd216c040214283c46e5b4fbeec
+  revision: 1f7c92cfc32dc4537b2f2f30df8ea65323f451d5
   branch: log-record-processor3
   glob: sdk/*.gemspec
   specs:
-    opentelemetry-sdk (1.4.1)
+    opentelemetry-sdk (1.5.0)
       opentelemetry-api (~> 1.1)
       opentelemetry-common (~> 0.20)
       opentelemetry-registry (~> 0.2)
@@ -393,7 +393,7 @@ GEM
       opentelemetry-semantic_conventions (>= 1.8.0)
     opentelemetry-registry (0.3.1)
       opentelemetry-api (~> 1.1)
-    opentelemetry-semantic_conventions (1.10.0)
+    opentelemetry-semantic_conventions (1.10.1)
       opentelemetry-api (~> 1.0)
     opentelemetry-test-helpers (0.4.0)
     psych (5.1.2)
