@@ -5,7 +5,7 @@ class TestController < ApplicationController
   def index
     # Manually emit a log from the OpenTelemetry Logger
     APP_LOGGER.on_emit(
-      body: 'Reporting from APP_LOGGER.emit',
+      body: 'Reporting from APP_LOGGER.on_emit',
       severity_text: 'DEBUG',
       attributes: { 'test' => 'attribute' }
     )
