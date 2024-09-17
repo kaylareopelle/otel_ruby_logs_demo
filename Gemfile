@@ -50,12 +50,11 @@ gem 'opentelemetry-logs-sdk',
   branch: 'log-record-processor3',
   glob: 'logs_sdk/*.gemspec'
 
-# OTLP Exporters with logging enhancements
-gem 'opentelemetry-exporter-otlp',
-  git: 'https://github.com/kaylareopelle/opentelemetry-ruby',
-  branch: 'log-record-processor3',
-  glob: 'exporter/otlp/*.gemspec'
+# OTLP Exporters
+# We don't need to change anything with the main OTLP exporter
+gem 'opentelemetry-exporter-otlp'
 
+# The OTLP logging exporter has not been released
 gem 'opentelemetry-exporter-otlp-logs',
   git: 'https://github.com/kaylareopelle/opentelemetry-ruby',
   branch: 'log-record-processor3',
