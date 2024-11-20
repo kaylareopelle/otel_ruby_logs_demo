@@ -1,30 +1,22 @@
 GIT
   remote: https://github.com/kaylareopelle/opentelemetry-ruby
-  revision: e5c03c3b95d5b7199eea355470570d7b17c3a0c1
-  branch: log-record-processor3
-  glob: api/*.gemspec
-  specs:
-    opentelemetry-api (1.4.0)
-
-GIT
-  remote: https://github.com/kaylareopelle/opentelemetry-ruby
-  revision: e5c03c3b95d5b7199eea355470570d7b17c3a0c1
+  revision: 31ff06315824c4130a8f9fa4dfcba7d8fd865a78
   branch: log-record-processor3
   glob: exporter/otlp-logs/*.gemspec
   specs:
-    opentelemetry-exporter-otlp-logs (0.26.3)
-      google-protobuf (~> 3.14)
+    opentelemetry-exporter-otlp-logs (0.1.0)
+      google-protobuf (>= 3.18)
       googleapis-common-protos-types (~> 1.3)
       opentelemetry-api (~> 1.1)
       opentelemetry-common (~> 0.20)
-      opentelemetry-logs-api
-      opentelemetry-logs-sdk
+      opentelemetry-logs-api (~> 0.1)
+      opentelemetry-logs-sdk (~> 0.1)
       opentelemetry-sdk
       opentelemetry-semantic_conventions
 
 GIT
   remote: https://github.com/kaylareopelle/opentelemetry-ruby
-  revision: e5c03c3b95d5b7199eea355470570d7b17c3a0c1
+  revision: 31ff06315824c4130a8f9fa4dfcba7d8fd865a78
   branch: log-record-processor3
   glob: logs_api/*.gemspec
   specs:
@@ -33,7 +25,7 @@ GIT
 
 GIT
   remote: https://github.com/kaylareopelle/opentelemetry-ruby
-  revision: e5c03c3b95d5b7199eea355470570d7b17c3a0c1
+  revision: 31ff06315824c4130a8f9fa4dfcba7d8fd865a78
   branch: log-record-processor3
   glob: logs_sdk/*.gemspec
   specs:
@@ -44,7 +36,7 @@ GIT
 
 GIT
   remote: https://github.com/kaylareopelle/opentelemetry-ruby
-  revision: e5c03c3b95d5b7199eea355470570d7b17c3a0c1
+  revision: 31ff06315824c4130a8f9fa4dfcba7d8fd865a78
   branch: log-record-processor3
   glob: sdk/*.gemspec
   specs:
@@ -53,6 +45,14 @@ GIT
       opentelemetry-common (~> 0.20)
       opentelemetry-registry (~> 0.2)
       opentelemetry-semantic_conventions
+
+GIT
+  remote: https://github.com/kaylareopelle/opentelemetry-ruby
+  revision: 31ff06315824c4130a8f9fa4dfcba7d8fd865a78
+  branch: log-record-processor3
+  glob: api/*.gemspec
+  specs:
+    opentelemetry-api (1.4.0)
 
 GIT
   remote: https://github.com/kaylareopelle/opentelemetry-ruby-contrib
@@ -175,6 +175,7 @@ GEM
       i18n (>= 1.6, < 2)
       minitest (>= 5.1)
       tzinfo (~> 2.0)
+    bigdecimal (3.1.8)
     builder (3.3.0)
     concurrent-ruby (1.3.4)
     crass (1.0.6)
@@ -185,12 +186,24 @@ GEM
     erubi (1.13.0)
     globalid (1.2.1)
       activesupport (>= 6.1)
-    google-protobuf (3.25.4)
-    google-protobuf (3.25.4-aarch64-linux)
-    google-protobuf (3.25.4-arm64-darwin)
-    google-protobuf (3.25.4-x86-linux)
-    google-protobuf (3.25.4-x86_64-darwin)
-    google-protobuf (3.25.4-x86_64-linux)
+    google-protobuf (4.28.3)
+      bigdecimal
+      rake (>= 13)
+    google-protobuf (4.28.3-aarch64-linux)
+      bigdecimal
+      rake (>= 13)
+    google-protobuf (4.28.3-arm64-darwin)
+      bigdecimal
+      rake (>= 13)
+    google-protobuf (4.28.3-x86-linux)
+      bigdecimal
+      rake (>= 13)
+    google-protobuf (4.28.3-x86_64-darwin)
+      bigdecimal
+      rake (>= 13)
+    google-protobuf (4.28.3-x86_64-linux)
+      bigdecimal
+      rake (>= 13)
     googleapis-common-protos-types (1.16.0)
       google-protobuf (>= 3.18, < 5.a)
     i18n (1.14.6)
