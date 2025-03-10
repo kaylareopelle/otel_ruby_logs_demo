@@ -22,7 +22,7 @@ jobs:
       - name: Configure git
         run: 'git config --global init.defaultBranch main'
       - uses: actions/checkout@v4.1.7
-      - uses: ruby/setup-ruby@v1.193.0
+      - uses: ruby/setup-ruby@v1.197.0
         with:
           ruby-version: '3.2.2'
       - run: bundle
