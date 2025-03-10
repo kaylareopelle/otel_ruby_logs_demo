@@ -28,37 +28,10 @@ group :test do
   gem 'rack-test'
 end
 
-# OpenTelemetry gems with logging-related enhancements
-gem 'opentelemetry-api',
-  git: 'https://github.com/kaylareopelle/opentelemetry-ruby',
-  branch: 'log-record-processor3',
-  glob: 'api/*.gemspec'
-
-gem 'opentelemetry-sdk',
-  git: 'https://github.com/kaylareopelle/opentelemetry-ruby',
-  branch: 'log-record-processor3',
-  glob: 'sdk/*.gemspec'
-
-# Unreleased, logs-specific gems
-gem 'opentelemetry-logs-api',
-  git: 'https://github.com/kaylareopelle/opentelemetry-ruby',
-  branch: 'log-record-processor3',
-  glob: 'logs_api/*.gemspec'
-
-gem 'opentelemetry-logs-sdk',
-  git: 'https://github.com/kaylareopelle/opentelemetry-ruby',
-  branch: 'log-record-processor3',
-  glob: 'logs_sdk/*.gemspec'
-
-# OTLP Exporters
-# We don't need to change anything with the main OTLP exporter
+gem 'opentelemetry-sdk', '~> 1.6'
+gem 'opentelemetry-logs-sdk'
 gem 'opentelemetry-exporter-otlp'
-
-# The OTLP logging exporter has not been released
-gem 'opentelemetry-exporter-otlp-logs',
-  git: 'https://github.com/kaylareopelle/opentelemetry-ruby',
-  branch: 'log-record-processor3',
-  glob: 'exporter/otlp-logs/*.gemspec'
+gem 'opentelemetry-exporter-otlp-logs'
 
 # Instrumentation and Ruby Logger bridge
 gem 'opentelemetry-instrumentation-all',

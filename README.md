@@ -1,5 +1,16 @@
 # Experimental! OpenTelemetry Logs for Ruby Demo
 
+> [!IMPORTANT]
+> **Update 2024-12-05:** Some of the gems referenced in this example are now available
+> on RubyGems, so you no longer need to install them from source.
+> * `opentelemetry-logs-sdk`
+> * `opentelemetry-sdk` version 1.6+
+> * `opentelemetry-exporter-otlp-logs`
+>
+> The gems with `api` in the name should be installed automatically where needed.
+> The `opentelemetry-instrumentation-*` gems referenced in this example have not been released.
+> The example Gemfile has been updated to reflect what's needed.
+
 This is a minimal [Rails](https://rubyonrails.org/) 7.0 / [Ruby](https://github.com/ruby/ruby) 3.2 application demonstrating how to use an experimental implementation of [OpenTelemetry logs](https://opentelemetry.io/docs/specs/otel/logs/) for Ruby.
 
 PRs for the gems used in this example can be found at:
