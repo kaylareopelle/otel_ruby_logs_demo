@@ -28,7 +28,7 @@ group :test do
   gem 'rack-test'
 end
 
-gem 'opentelemetry-sdk', '~> 1.6'
+gem 'opentelemetry-sdk', '~> 1.8'
 gem 'opentelemetry-logs-sdk'
 gem 'opentelemetry-exporter-otlp'
 gem 'opentelemetry-exporter-otlp-logs'

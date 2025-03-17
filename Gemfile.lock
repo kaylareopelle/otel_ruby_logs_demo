@@ -364,7 +364,7 @@ GEM
       opentelemetry-sdk (~> 1.3)
     opentelemetry-registry (0.4.0)
       opentelemetry-api (~> 1.1)
-    opentelemetry-sdk (1.6.0)
+    opentelemetry-sdk (1.8.0)
       opentelemetry-api (~> 1.1)
       opentelemetry-common (~> 0.20)
       opentelemetry-registry (~> 0.2)
@@ -445,7 +445,7 @@ DEPENDENCIES
   opentelemetry-instrumentation-all!
   opentelemetry-instrumentation-logger!
   opentelemetry-logs-sdk
-  opentelemetry-sdk (~> 1.6)
+  opentelemetry-sdk (~> 1.8)
   opentelemetry-test-helpers
   puma (~> 6.4)
   rack-test
