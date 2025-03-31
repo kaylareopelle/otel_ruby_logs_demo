@@ -371,7 +371,7 @@ GEM
       opentelemetry-semantic_conventions
     opentelemetry-semantic_conventions (1.11.0)
       opentelemetry-api (~> 1.0)
-    opentelemetry-test-helpers (0.4.0)
+    opentelemetry-test-helpers (0.6.0)
     psych (5.1.2)
       stringio
     puma (6.4.3)
