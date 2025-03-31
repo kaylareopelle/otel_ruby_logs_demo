@@ -167,7 +167,7 @@ GEM
     marcel (1.0.4)
     method_source (1.1.0)
     mini_mime (1.1.5)
-    minitest (5.25.1)
+    minitest (5.25.5)
     net-imap (0.4.16)
       date
       net-protocol
