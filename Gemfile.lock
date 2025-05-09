@@ -178,7 +178,7 @@ GEM
       timeout
     net-smtp (0.5.0)
       net-protocol
-    nio4r (2.7.3)
+    nio4r (2.7.4)
     nokogiri (1.16.7-aarch64-linux)
       racc (~> 1.4)
     nokogiri (1.16.7-arm-linux)
@@ -379,7 +379,7 @@ GEM
     psych (5.2.3)
       date
       stringio
-    puma (6.4.3)
+    puma (6.6.0)
       nio4r (~> 2.0)
     racc (1.8.1)
     rack (2.2.13)
@@ -452,7 +452,7 @@ DEPENDENCIES
   opentelemetry-logs-sdk
   opentelemetry-sdk (~> 1.8)
   opentelemetry-test-helpers
-  puma (~> 6.4)
+  puma (~> 6.6)
   rack-test
   rails (~> 7.0.8)
   sqlite3 (~> 1.4)
