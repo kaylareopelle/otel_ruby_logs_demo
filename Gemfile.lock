@@ -1,15 +1,5 @@
 GIT
   remote: https://github.com/kaylareopelle/opentelemetry-ruby-contrib
-  revision: b0cace23725585d2b2a0d17f1f9c3f083ebf4add
-  branch: logger-instrumentation
-  glob: instrumentation/logger/*.gemspec
-  specs:
-    opentelemetry-instrumentation-logger (0.1.0)
-      opentelemetry-instrumentation-base (~> 0.22)
-      opentelemetry-logs-api (~> 0.1)
-
-GIT
-  remote: https://github.com/kaylareopelle/opentelemetry-ruby-contrib
   revision: 5dcb6edabb8a59e519abb7cc95d9612ae022ac50
   branch: logger-instrumentation
   glob: instrumentation/all/*.gemspec
@@ -51,6 +41,16 @@ GIT
       opentelemetry-instrumentation-sidekiq (~> 0.26.0)
       opentelemetry-instrumentation-sinatra (~> 0.25.0)
       opentelemetry-instrumentation-trilogy (~> 0.61.0)
+
+GIT
+  remote: https://github.com/kaylareopelle/opentelemetry-ruby-contrib
+  revision: 5dcb6edabb8a59e519abb7cc95d9612ae022ac50
+  branch: logger-instrumentation
+  glob: instrumentation/logger/*.gemspec
+  specs:
+    opentelemetry-instrumentation-logger (0.1.0)
+      opentelemetry-instrumentation-base (~> 0.23.0)
+      opentelemetry-logs-api (~> 0.1)
 
 GEM
   remote: https://rubygems.org/
