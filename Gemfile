@@ -1,16 +1,12 @@
 source "https://rubygems.org"
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-ruby "3.2.2"
-
-gem "rails", "~> 7.0.8"
+gem "rails"
 
 # Use sqlite3 as the database for Active Record
-gem "sqlite3", "~> 1.4"
-
+gem "sqlite3"
 # Use the Puma web server [https://github.com/puma/puma]
-gem "puma", "~> 6.6"
-
+gem "puma"
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem "tzinfo-data", platforms: %i[ mingw mswin x64_mingw jruby ]
 
@@ -28,18 +24,9 @@ group :test do
   gem 'rack-test'
 end
 
-gem 'opentelemetry-sdk', '~> 1.9'
+gem 'opentelemetry-sdk'
 gem 'opentelemetry-logs-sdk'
 gem 'opentelemetry-exporter-otlp'
 gem 'opentelemetry-exporter-otlp-logs'
-
-# Instrumentation and Ruby Logger bridge
-gem 'opentelemetry-instrumentation-all',
-  git: 'https://github.com/kaylareopelle/opentelemetry-ruby-contrib',
-  branch: 'logger-instrumentation',
-  glob: 'instrumentation/all/*.gemspec'
-
-gem 'opentelemetry-instrumentation-logger',
-  git: 'https://github.com/kaylareopelle/opentelemetry-ruby-contrib',
-  branch: 'logger-instrumentation',
-  glob: 'instrumentation/logger/*.gemspec'
+gem 'opentelemetry-instrumentation-all'
+gem 'opentelemetry-instrumentation-logger'
